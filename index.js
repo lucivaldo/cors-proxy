@@ -5,7 +5,7 @@ import corsProxy from 'cors-anywhere';
 
 corsProxy.createServer({
   originWhitelist: [],
-  requireHeader: ['origin', 'x-requested-with'],
+  //requireHeader: ['origin', 'x-requested-with'],
 })
 .listen(port, host, () => {
   console.log(`Running CORS Anywhere on ${host}:${port}`);
