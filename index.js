@@ -8,5 +8,6 @@ corsProxy.createServer({
   //requireHeader: ['origin', 'x-requested-with'],
 })
 .listen(port, host, () => {
-  console.log(`Running CORS Anywhere on ${host}:${port}`);
+  const address = `http://${host}:${port}`;
+  console.log(`Running CORS Anywhere on ${address}`);
 });
